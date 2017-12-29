@@ -22,17 +22,17 @@ module.exports = {
       }
     )
   },
-  setApplicationId: function (applicationId) {
+  setApplicationId: function (appId) {
     return new Promise(
       function (resolve, reject) {
-        exec(resolve, reject, 'FirebaseAdmobPlugin', 'setApplicationId', [applicationId]);
+        exec(resolve, reject, 'FirebaseAdmobPlugin', 'setAdmobAppId', [appId]);
       }
     )
   },
-  setInterstitialId: function (adUnitId) {
+  setInterstitialId: function (unitId) {
     return new Promise(
       function(resolve, reject) {
-        exec(resolve, reject, 'FirebaseAdmobPlugin', 'setInterstitialId', [adUnitId]);
+        exec(resolve, reject, 'FirebaseAdmobPlugin', 'setInterstitialId', [unitId]);
       }
     )
   },

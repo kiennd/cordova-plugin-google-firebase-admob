@@ -57,8 +57,8 @@ public class FirebaseAdmobPlugin extends CordovaPlugin {
             return true;
         }
 
-        if ("setApplicationId".equals(action)) {
-            setApplicationId(args.getString(0));
+        if ("setAdmobAppId".equals(action)) {
+            setAdmobAppId(args.getString(0));
 
             return true;
         }
@@ -111,10 +111,10 @@ public class FirebaseAdmobPlugin extends CordovaPlugin {
         });
     }
 
-    private void setApplicationId(final String applicationId) {
-        this.applicationId = applicationId;
+    private void setAdmobAppId(final String appId) {
+        this.applicationId = appId;
 
-        MobileAds.initialize(applicationContext, applicationId);
+        MobileAds.initialize(applicationContext, this.applicationId);
     }
 
     private void setInterstitialId(final String interstitialId) {

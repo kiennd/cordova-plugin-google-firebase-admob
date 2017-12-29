@@ -47,8 +47,8 @@ class FirebaseAdmobPlugin : CDVPlugin {
       }
   }
 
-  @objc(setApplicationId:)
-  func setApplicationId(command: CDVInvokedUrlCommand) {
+  @objc(setAdmobAppId:)
+  func setAdmobAppId(command: CDVInvokedUrlCommand) {
       DispatchQueue.global(qos: .userInitiated).async {
           let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
 
