@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-google-firebase-admob"
+        version="0.1.0">
+
+  <name>Firebase AdMob Plugin</name>
+  <description>Cordova plugin for Google Firebase AdMob</description>
+  <author>Joshua McFarland</author>
+  <license>MIT</license>
+  <keywords>cordova,google,firebase,admob</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=6.4.0" />
+    <engine name="cordova-android" version=">=6.3.0" />
+    <engine name="cordova-ios" version=">=4.3.0" />
+  </engines>
+
+  <js-module src="www/firebase-admob.js" name="FirebaseAdmobPlugin">
+    <clobbers target="plugins.firebase.admob" />
+  </js-module>
+
+  <dependency id="cordova-plugin-google-firebase" version="0.1.4"/>
+
+  <platform name="android">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="FirebaseAdmobPlugin" >
+        <param name="android-package" value="com.jernung.plugins.firebase.admob.FirebaseAdmobPlugin" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+
+    <framework src="com.google.firebase:firebase-ads:11.8.0" />
+
+    <source-file src="src/android/FirebaseAdmobPlugin.java" target-dir="src/com/jernung/plugins/firebase/admob" />
+
+  </platform>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+			<feature name="FirebaseAdmobPlugin">
+				<param name="ios-package" value="FirebaseAdmobPlugin" />
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+
+    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.8.0"/>
+
+    <source-file src="src/ios/FirebaseAdmobPlugin.swift" />
+
+  </platform>
+
+</plugin>
