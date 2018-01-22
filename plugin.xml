@@ -19,7 +19,7 @@
     <clobbers target="plugins.firebase.admob" />
   </js-module>
 
-  <dependency id="cordova-plugin-google-firebase" version="0.1.5"/>
+  <dependency id="cordova-plugin-google-firebase" version="0.1.6"/>
 
   <platform name="android">
 
