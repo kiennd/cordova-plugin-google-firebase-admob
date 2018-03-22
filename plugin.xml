@@ -34,7 +34,7 @@
       <uses-permission android:name="android.permission.INTERNET" />
     </config-file>
 
-    <framework src="com.google.firebase:firebase-ads:11.8.0" />
+    <framework src="com.google.firebase:firebase-ads:12.0.0" />
 
     <source-file src="src/android/FirebaseAdmobPlugin.java" target-dir="src/com/jernung/plugins/firebase/admob" />
 
@@ -49,7 +49,7 @@
 			</feature>
 		</config-file>
 
-    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.8.1"/>
+    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.11.0"/>
 
     <source-file src="src/ios/FirebaseAdmobPlugin.swift" />
 
