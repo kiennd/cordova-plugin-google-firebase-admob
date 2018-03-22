@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-google-firebase-admob",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Cordova plugin for Google Firebase AdMob.",
   "author": "Joshua McFarland",
   "license": "MIT",
