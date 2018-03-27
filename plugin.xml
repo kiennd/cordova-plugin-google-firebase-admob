@@ -49,7 +49,7 @@
 			</feature>
 		</config-file>
 
-    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.8.2"/>
+    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.8.1"/>
 
     <source-file src="src/ios/FirebaseAdmobPlugin.swift" />
 
