@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-google-firebase-admob"
+        id="kiennd-cordova-plugin-google-firebase-admob"
         version="0.5.1">
 
   <name>Firebase AdMob Plugin</name>
