@@ -24,8 +24,7 @@
   "cordova": {
     "id": "kiennd-cordova-plugin-google-firebase-admob",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "dependencies": {
