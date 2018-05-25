@@ -12,7 +12,6 @@
   <engines>
     <engine name="cordova" version=">=6.4.0" />
     <engine name="cordova-android" version=">=6.3.0" />
-    <engine name="cordova-ios" version=">=4.3.0" />
   </engines>
 
   <js-module src="www/firebase-admob.js" name="FirebaseAdmobPlugin">
@@ -40,19 +39,5 @@
 
   </platform>
 
-  <platform name="ios">
-
-    <config-file target="config.xml" parent="/*">
-			<feature name="FirebaseAdmobPlugin">
-				<param name="ios-package" value="FirebaseAdmobPlugin" />
-				<param name="onload" value="true" />
-			</feature>
-		</config-file>
-
-    <framework src="Firebase/AdMob" type="podspec" spec="~> 4.8.1"/>
-
-    <source-file src="src/ios/FirebaseAdmobPlugin.swift" />
-
-  </platform>
 
 </plugin>
